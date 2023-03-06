@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.test-border {
+  border: 1px solid red;
+}
+.test-border-green {
+  border: 1px solid green;
+}
+
+/* Shadow */
+.shadow-top {
+  box-shadow: 0 -5px 5px -5px rgb(103, 103, 103, 0.5);
+}
+
+.shadow-right {
+  box-shadow: -5px 0 5px -5px rgb(103, 103, 103, 0.5);
+}
+
+.shadow-bottom {
+  box-shadow: 0 5px 5px -5px rgb(103, 103, 103, 0.5);
+}
+
+.shadow-left {
+  box-shadow: 5px 0 5px -5px rgb(103, 103, 103, 0.5);
+}
+
+.shadow-all {
+  box-shadow: 0 0 5px rgb(103, 103, 103, 0.5);
+}
+
+/* Chat Message */
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 15px solid rgb(241 245 249);
+  border-bottom: 8px solid transparent;
+  position: relative;
+  top: 40px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 15px solid rgb(165 243 252);
+  border-bottom: 8px solid transparent;
+  position: relative;
+  top: 40px;
+}
