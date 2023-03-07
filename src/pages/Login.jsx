@@ -73,11 +73,18 @@ const Login = (props) => {
 
   // Reset state Data
   const resetStateData = (reset) => {
+    /**
+     * Google drive image id
+     * Welcome cat = 1mdvQQ5VUVFHOyuiX84Lw3n2VxKO4IBfy
+     * Angry cat = 1KiCTN5AqFA1cRnazTM5V1V9rKtJsKdTj
+     */
     if (reset) {
-      catImage.current.src = "../../images/welcome-cat.gif";
+      catImage.current.src =
+        "https://drive.google.com/uc?export=view&id=1mdvQQ5VUVFHOyuiX84Lw3n2VxKO4IBfy";
       setAlertWarning({ type: "", message: "", color: "" });
     } else {
-      catImage.current.src = "../../images/angry-cat.gif";
+      catImage.current.src =
+        "https://drive.google.com/uc?export=view&id=1KiCTN5AqFA1cRnazTM5V1V9rKtJsKdTj";
     }
   };
   return (
@@ -86,7 +93,7 @@ const Login = (props) => {
         {/* Image */}
         <div className="relative">
           <img
-            src="../../images/welcome-cat.gif"
+            src="https://drive.google.com/uc?export=view&id=1mdvQQ5VUVFHOyuiX84Lw3n2VxKO4IBfy"
             className={`max-w-xs h-auto mx-auto ${
               alertWarning && alertWarning.type === "warning" && "mt-[104px]"
             }`}
