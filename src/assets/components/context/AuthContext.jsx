@@ -44,6 +44,7 @@ export const AuthContextProvider = ({ children }) => {
       // get active users from backend socket
       socket.on("get_active_users", (users) => {
         // extract the user id from array of objects and put it in a new array
+        console.log("GETTING ACTIVE USERS FROM SOCKET", users);
         const userIds = users.map((obj) => obj.userId);
         setActiveUsers(userIds);
       });
