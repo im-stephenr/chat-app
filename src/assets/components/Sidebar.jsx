@@ -44,7 +44,9 @@ const Sidebar = (props) => {
                       <Avatar
                         size="9"
                         image={key.avatar}
-                        status={activeUsers?.includes(key._id) ? 1 : 0}
+                        status={
+                          activeUsers && activeUsers.includes(key._id) ? 1 : 0
+                        }
                       />
                       {/* Name */}
                       <span className="ml-3">{key.userName}</span>
